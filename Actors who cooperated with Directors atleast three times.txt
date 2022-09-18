@@ -1,4 +1,3 @@
--- Question 21
 -- Table: ActorDirector
 
 -- +-------------+---------+
@@ -59,8 +58,7 @@ values
 (2,1,6) 
 
 
-select actor_id,director_id,count(*) 
+Select actor_id, director_id
 from actordirector
-group by actor_id,director_id
-having count(*) >= 3
- 
+group by actor_id, director_id
+having count(*)>=3
